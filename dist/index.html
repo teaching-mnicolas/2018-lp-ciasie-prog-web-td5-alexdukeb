@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>MyMediatek</title>
-        <link rel="stylesheet" href="lib/semantic-2.4.0/semantic.min.css">
+        <link rel="stylesheet" href="../lib/semantic-2.4.0/semantic.min.css">
     </head>
     <body>
 
@@ -96,15 +96,15 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="lib/jquery-3.3.1/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="lib/semantic-2.4.0/semantic.min.js"></script>
+        <script type="text/javascript" src="../lib/jquery-3.3.1/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="../lib/semantic-2.4.0/semantic.min.js"></script>
         
         <script type="module">
-            import { App } from "./src/App.js"
-            import { Album } from "./src/models/Album.js"
-            import { Collection } from "./src/models/Collection.js"
-            import { Game } from "./src/models/Game.js"
-            import { Movie } from "./src/models/Movie.js"
+            import { App } from "bundle.js"
+            import { Album } from "bundle.js"
+            import { Collection } from "bundle.js"
+            import { Game } from "bundle.js"
+            import { Movie } from "bundle.js"
             
            
 
@@ -113,7 +113,7 @@
                     const title = "Full Circle"
                     const releaseDate = new Date(2016, 3, 1)
                     const rating = 5
-                    const img = "img/albums/full-circle.jpg"
+                    const img = "../img/albums/full-circle.jpg"
                     const artists = "HAELOS"
                     const nbTracks = 11
 
@@ -124,7 +124,7 @@
                     const title = "Hollow Knight"
                     const releaseDate = new Date(2017, 2, 24)
                     const rating = 5
-                    const img = "img/games/hollow-knight.jpg"
+                    const img = "../img/games/hollow-knight.jpg"
                     const studio = "Team Cherry"
                     const nbPlayers = 1
                     const plot = "The game tells the story of a knight on a quest to uncover the secrets of the long-abandoned insect kingdom of Hallownest, whose haunting depths draw in the adventurous and brave with promises of treasures and answers to ancient mysteries."
@@ -136,7 +136,7 @@
                     const title = "Scott Pilgrim vs. the World"
                     const releaseDate = new Date(2010, 8, 13)
                     const rating = 5
-                    const img = "img/movies/scott-pilgrim.jpg"
+                    const img = "../img/movies/scott-pilgrim.jpg"
                     const director = "Edgar Wright"
                     const actors = "Michael Cera, Mary Elizabeth Winstead"
                     const duration = 112
@@ -153,12 +153,12 @@
             })
         </script>
 
-        <script type="module" src="./src/models/Media.js"></script>
-        <script type="module" src="./src/models/Collection.js"></script>
-        <script type="module" src="./src/models/Album.js"></script>
-        <script type="module" src="./src/models/Game.js"></script>
-        <script type="module" src="./src/models/Movie.js"></script>
+        <!--<script type="module" src="../src/models/Media.js"></script>
+        <script type="module" src="../src/models/Collection.js"></script>
+        <script type="module" src="../src/models/Album.js"></script>
+        <script type="module" src="../src/models/Game.js"></script>
+        <script type="module" src="../src/models/Movie.js"></script>-->
 
-        <script type="module" src="./src/models/App.js"></script>
+        <script type="module" src="bundle.js"></script>
     </body>
 </html>
